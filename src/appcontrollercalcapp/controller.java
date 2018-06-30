@@ -13,21 +13,21 @@ import java.util.HashMap;
  */
 public class controller {
 
-    private static final HashMap<String, compute> mathSymbolMap = new HashMap<>();
+    private static final HashMap<String, Handler> mathSymbolMap = new HashMap<>();
 
     public controller() {
     }
 
     static {
-        mathSymbolMap.put("+", (compute) new Add());
-        mathSymbolMap.put("/", (compute) new Divide());
-        mathSymbolMap.put("*", (compute) new Multiply());
-        mathSymbolMap.put("-", (compute) new Subtract());
+        mathSymbolMap.put("+", (Handler) new Add());
+        mathSymbolMap.put("/", (Handler) new Divide());
+        mathSymbolMap.put("*", (Handler) new Multiply());
+        mathSymbolMap.put("-", (Handler) new Subtract());
     }
 
     public void handleCommand(String command, Integer num1, Integer num2) {
 
-        compute handler = mathSymbolMap.get(command);
+        Handler handler = mathSymbolMap.get(command);
 
         handler.execute(num1, num2);
 

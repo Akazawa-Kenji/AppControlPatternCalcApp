@@ -9,7 +9,7 @@ package appcontrollercalcapp;
  *
  * @author Crazian
  */
-public class Divide implements compute {
+public class Divide implements Handler {
 
     public void execute(Integer num1, Integer num2) {
         Integer div = num1 / num2;

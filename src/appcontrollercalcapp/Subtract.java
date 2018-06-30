@@ -9,7 +9,7 @@ package appcontrollercalcapp;
  *
  * @author Crazian
  */
-public class Subtract implements compute {
+public class Subtract implements Handler {
 
     public void execute(Integer num1, Integer num2) {
         Integer diff = num1 - num2;

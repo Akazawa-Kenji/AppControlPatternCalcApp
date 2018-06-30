@@ -9,7 +9,7 @@ package appcontrollercalcapp;
  *
  * @author Crazian
  */
-public interface compute {
+public interface Handler {
 
     void execute(Integer num1, Integer num2);
 }

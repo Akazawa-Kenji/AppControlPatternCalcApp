@@ -9,7 +9,7 @@ package appcontrollercalcapp;
  *
  * @author Crazian
  */
-public class Add implements compute {
+public class Add implements Handler {
 
     public void execute(Integer num1, Integer num2) {
         Integer sum = num1 + num2;

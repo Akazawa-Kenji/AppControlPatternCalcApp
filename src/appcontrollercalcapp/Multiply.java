@@ -9,7 +9,7 @@ package appcontrollercalcapp;
  *
  * @author Crazian
  */
-public class Multiply implements compute {
+public class Multiply implements Handler {
 
     public void execute(Integer num1, Integer num2) {
         Integer prod = num1 * num2;
